@@ -29,6 +29,7 @@ function setup(){
     video = createCapture(VIDEO);
     video.size(500, 500);
     video.hide();
+    canvas.class("col-lg-6 col-md-8 col-sm-11 col-xs-12");
 
     poseNet = ml5.poseNet(video , modelLoaded);
     poseNet.on('pose', gotPoses);
